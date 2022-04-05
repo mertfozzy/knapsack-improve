@@ -20,17 +20,6 @@ int knapSack(int W, int weights[], int values[], int n)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 int main(){
     printf("\n=== WELCOME TO THE KNAPSACK SOLVER ===\n\n");
 

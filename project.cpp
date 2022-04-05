@@ -5,9 +5,11 @@ using namespace std;
 int max(int a, int b) { return (a > b) ? a : b; }
 int knapSack(int W, int weights[], int values[], int n)
 {
+    //base case
     if (n == 0 || W == 0)
         return 0;
 
+    //if nth item's weight is more than knapsack capacity (W), not optimal solution
     if (weights[n - 1] > W)
         return knapSack(W, weights, values, n - 1);
   
